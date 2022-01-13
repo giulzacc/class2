@@ -1,4 +1,5 @@
--- For each team, what is the average number of wins per season, in the 21st century?
+-- For each team, what is the average number of wins per season, 
+-- in the 21st century?
 
 -- Expected result:
 --
@@ -39,4 +40,7 @@
 -- | Washington Nationals          | 78.0             |
 -- +-------------------------------+------------------+
 
-
+SELECT name, AVG(wins)
+FROM teams
+WHERE year >=2000 
+GROUP BY name ;

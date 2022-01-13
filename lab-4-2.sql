@@ -24,4 +24,5 @@
 -- | Billy      | Hamilton  |
 -- | Ian        | Happ      |
 
-
+SELECT players.first_name and players.last_name
+FROM players INNER JOIN 
